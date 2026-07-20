@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="850" height="240" role="img" aria-label="Vadim Cheban — .NET developer. Frame-time chart in a PowerShell window: 6.4 ms average before tweaks, 0.5 ms after.">
+  <style>
+    text {
+      font-family: 'Cascadia Code', 'Cascadia Mono', Consolas, 'JetBrains Mono', monospace;
+      fill: #E8F0FF;
+    }
+    .muted  { fill: #6B85B8; }
+    .amber  { fill: #FFC957; }
+    .green  { fill: #3FE07C; }
+    .bold   { font-weight: 600; }
+
+    .pulse {
+      fill: none;
+      stroke: #3FE07C;
+      stroke-width: 2;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      animation: draw 3.5s cubic-bezier(.4, 0, .2, 1) 0.8s forwards;
+    }
+    .fade-divider { opacity: 0; animation: fade .5s 2.7s forwards; }
+    .fade-labels  { opacity: 0; animation: fade .5s 4.3s forwards; }
+    .fade-name    { opacity: 0; animation: fade .5s 4.8s forwards; }
+    .caret        { opacity: 0; animation: blink 1.1s steps(1) 5.3s infinite; }
+
+    @keyframes draw  { to { stroke-dashoffset: 0; } }
+    @keyframes fade  { to { opacity: 1; } }
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .pulse, .fade-divider, .fade-labels, .fade-name, .caret { animation: none; }
+      .pulse { stroke-dashoffset: 0; }
+      .fade-divider, .fade-labels, .fade-name, .caret { opacity: 1; }
+    }
+  </style>
+
+  <!-- console window -->
+  <rect x="1" y="1" width="848" height="238" rx="10" fill="#012456" stroke="#1B3A6B" stroke-width="1.5"/>
+  <path d="M1 11 A10 10 0 0 1 11 1 H839 A10 10 0 0 1 849 11 V35 H1 Z" fill="#0A1F44"/>
+  <line x1="1" y1="35" x2="849" y2="35" stroke="#1B3A6B" stroke-width="1"/>
+  <text x="18" y="23" font-size="12" class="muted">Windows PowerShell — vadyaravadim</text>
+  <!-- window controls -->
+  <line x1="770" y1="18" x2="780" y2="18" stroke="#6B85B8" stroke-width="1.5"/>
+  <rect x="795" y="13" width="10" height="10" fill="none" stroke="#6B85B8" stroke-width="1.5"/>
+  <path d="M821 13 L831 23 M831 13 L821 23" stroke="#6B85B8" stroke-width="1.5"/>
+
+  <!-- prompt -->
+  <text x="30" y="62" font-size="14">PS C:\Users\Vadim&gt;<tspan class="amber"> .\measure-frametime.ps1</tspan></text>
+
+  <!-- grid -->
+  <g stroke="#123B77" stroke-width="1" stroke-dasharray="3 5">
+    <line x1="30" y1="100" x2="820" y2="100"/>
+    <line x1="30" y1="134" x2="820" y2="134"/>
+    <line x1="30" y1="168" x2="820" y2="168"/>
+  </g>
+
+  <!-- frame-time line: jagged before, flat after -->
+  <polyline class="pulse" pathLength="1" points="30,150 55,120 75,158 95,105 115,152 135,88 150,148 170,125 190,160 210,98 230,150 250,135 270,162 285,110 305,155 325,92 345,150 365,130 385,160 405,102 425,148 445,140 460,152 475,166 500,169 530,167 560,170 590,168 620,170 650,167 680,169 710,168 740,170 770,168 800,169 820,168"/>
+
+  <!-- tweak divider -->
+  <g class="fade-divider">
+    <line x1="460" y1="76" x2="460" y2="176" stroke="#FFC957" stroke-width="1" stroke-dasharray="4 4"/>
+    <text x="470" y="86" font-size="11" class="amber">tweak applied</text>
+  </g>
+
+  <!-- readouts -->
+  <g class="fade-labels" font-size="12">
+    <text x="36" y="92" class="amber">avg 6.4 ms</text>
+    <text x="742" y="156" class="green">avg 0.5 ms</text>
+  </g>
+
+  <!-- name line -->
+  <g class="fade-name">
+    <text x="30" y="210" font-size="15"><tspan class="green"># </tspan><tspan class="bold">Vadim Cheban</tspan><tspan class="muted"> · .NET developer · transparent Windows latency tools</tspan></text>
+  </g>
+  <rect class="caret" x="625" y="198" width="8" height="15" fill="#3FE07C"/>
+</svg>
