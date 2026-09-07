@@ -1,4 +1,4 @@
-.NET backend developer. On the side I build **transparent PowerShell alternatives** to closed-source Windows tweaking tools — every script fits on one screen, needs no install, and writes a `.reg` / backup undo before touching anything.
+.NET backend developer. On the side I build **transparent PowerShell alternatives** to closed-source Windows tweaking tools — every script fits on one screen, needs no install, and writes a `.reg` / backup undo before touching anything. They pair with [RigPolice](https://rigpolice.com/?utm_source=github&utm_medium=readme&utm_campaign=vadyaravadim), my site of free browser tests for gaming gear.
 
 ## Latency toolbox
 
