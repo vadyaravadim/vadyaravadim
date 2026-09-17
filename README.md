@@ -16,3 +16,14 @@
 | [remove-hidden-devices](https://github.com/vadyaravadim/remove-hidden-devices) <img align="right" src="https://img.shields.io/github/stars/vadyaravadim/remove-hidden-devices?style=flat-square&label=%E2%98%85&labelColor=0A1F44&color=1B3A6B"> | — | Remove ghost devices from Device Manager |
 
 Every tool follows the same contract: read the script before you run it, undo file written before any change, one command to apply.
+
+## Check the result
+
+A tweak is worth keeping only if you can measure it. These free browser tests on RigPolice pair with the tools above:
+
+- After MSI mode or interrupt affinity: [Mouse Polling Rate Test](https://rigpolice.com/mouse/tests/polling-rate-test/?utm_source=github&utm_medium=readme&utm_campaign=vadyaravadim)
+- After a timer resolution change: [Refresh Rate Test](https://rigpolice.com/monitor/tests/refresh-rate-test/?utm_source=github&utm_medium=readme&utm_campaign=vadyaravadim)
+- After a ghost device cleanup: [Mouse Test](https://rigpolice.com/mouse/tests/mouse-test/?utm_source=github&utm_medium=readme&utm_campaign=vadyaravadim)
+- Before you unpark cores: [How to Disable CPU Core Parking in Windows 11, and Whether It Helps](https://rigpolice.com/system/articles/disable-cpu-core-parking/?utm_source=github&utm_medium=readme&utm_campaign=vadyaravadim)
+
+Also: [rigpolice-embed](https://github.com/vadyaravadim/rigpolice-embed), a zero-build WordPress block that embeds the RigPolice tests on any site.
