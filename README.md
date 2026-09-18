@@ -1,6 +1,8 @@
 .NET backend developer. On the side I build **transparent PowerShell alternatives** to closed-source Windows tweaking tools — every script fits on one screen, needs no install, and writes a `.reg` / backup undo before touching anything. They pair with [RigPolice](https://rigpolice.com/?utm_source=github&utm_medium=readme&utm_campaign=vadyaravadim), my site of free browser tests for gaming gear.
 
-[![Codewars](https://www.codewars.com/users/vadyaravadim/badges/large)](https://www.codewars.com/users/vadyaravadim/stats)
+<p align="center">
+  <a href="https://www.codewars.com/users/vadyaravadim/stats"><img src="https://www.codewars.com/users/vadyaravadim/badges/large" alt="Codewars"></a>
+</p>
 
 ## Latency toolbox
 
