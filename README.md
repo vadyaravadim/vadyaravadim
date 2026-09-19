@@ -29,5 +29,6 @@ A tweak is worth keeping only if you can measure it. These free browser tests on
 - After a timer resolution change: [Refresh Rate Test](https://rigpolice.com/monitor/tests/refresh-rate-test/?utm_source=github&utm_medium=readme&utm_campaign=vadyaravadim)
 - After a ghost device cleanup: [Mouse Test](https://rigpolice.com/mouse/tests/mouse-test/?utm_source=github&utm_medium=readme&utm_campaign=vadyaravadim)
 - Before you unpark cores: [How to Disable CPU Core Parking in Windows 11, and Whether It Helps](https://rigpolice.com/system/articles/disable-cpu-core-parking/?utm_source=github&utm_medium=readme&utm_campaign=vadyaravadim)
+- Before you enable MSI mode: [How to Enable MSI Mode in Windows 11, and What It Actually Changes](https://rigpolice.com/system/articles/enable-msi-mode/?utm_source=github&utm_medium=readme&utm_campaign=vadyaravadim)
 
 Also: [rigpolice-embed](https://github.com/vadyaravadim/rigpolice-embed), a zero-build WordPress block that embeds the RigPolice tests on any site.
